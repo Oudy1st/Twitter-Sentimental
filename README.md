@@ -42,3 +42,10 @@ I use textblob library to train 5 classifiers and use them joinly for multi-clas
   2. Load the dataset and classify it with all classifiers.
   3. Normalize the results and select the highest probability.
 
+
+
+# Result (demo)
+  I scrapped 1000 tweets with #bbcnews since 01-06-2019. Then, I categorized and sentimented them.
+As a result, 40% of tweets is about politic with 3 times positive than negative. Then, 25% of them is about business which a bit more negative than postitive. So, other are education (8%), tech (1%) and no sport.
+
+
