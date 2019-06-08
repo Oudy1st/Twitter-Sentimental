@@ -1,19 +1,19 @@
 # Twitter-Sentimental-categorization
 
 # Introduction
-  This project is created for test basic text sentimental and categorization. So, I scrapped 1000 tweets and analyse them.
+  This project is created to test basic text sentimental and categorization. So, I scrapped 1000 tweets and analyze them.
 
 # Development
   All in python.
 
 ### Twitter Scrapping
-I use tweepy library to scrap some tweets with keyword.
+I used Tweepy library to scrap some tweets with a keyword.
 
 ### Sentimental
-I use textblob library which has sentiment method.
+I use Textblob library which has the sentiment method.
 
 ### Categorization
-I use textblob library to train 5 classifiers and use them joinly for multi-classification, categorize.
+I use Textblob library to train 5 classifiers and use them jointly for multi-classification, categorize.
 
 
 
@@ -23,18 +23,18 @@ I use textblob library to train 5 classifiers and use them joinly for multi-clas
   Scrapping and sentimental Steps: 
   1. Set up twitter's keys and tokens from the Twitter Dev Console.
   2. Set up your keyword, target date (start scrapping), number tweets and retweet flag.
-  3. Set up your output csv file.
-  4. Run tweet_sentimental.py, which call twitter API and then create list of tweets with their sentimental, can observe at get_tweets().
+  3. Set up your output CSV file.
+  4. Run tweet_sentimental.py, which call twitter API and then create a list of tweets with their sentimental, can observe at get_tweets().
   
 # Categorization
   Training Categorize Model.py
   tweet_categorize.py
   
-  I need to create the model for multi-classification. So, I need to have dataset which contain text and label.
+  I need to create a model for multi-classification. So, I need to have a dataset which contains text and label.
   
   Dataset Acquired Steps:
-  1. Use twitter scrapping to scrap tweets with hashtag sport, tech, government&politic, education and business.
-  2. Use textblob library to train one-vs-all classifications for each category.
+  1. Use twitter scrapping to scrap tweets with hashtag sport, tech, government&politic, education, and business.
+  2. Use Textblob library to train one-vs-all classifications for each category.
   3. Save them with pickle library.
   
   Categorize Steps:
@@ -45,7 +45,5 @@ I use textblob library to train 5 classifiers and use them joinly for multi-clas
 
 
 # Result (demo)
-  I scrapped 1000 tweets with #bbcnews since 01-06-2019. Then, I categorized and sentimented them.
-As a result, 40% of tweets is about politic with 3 times positive than negative. Then, 25% of them is about business which a bit more negative than postitive. So, other are education (8%), tech (1%) and no sport.
-
-
+  I scrapped 1000 tweets with #bbcnews since 01-06-2019. Then, I categorized and sentiments them.
+As a result, 40% of tweets are about politic with 3 times positive than negative. Then, 25% of them is about a business which a bit more negative than positive. So, others are education (8%), tech (1%) and no sport.
