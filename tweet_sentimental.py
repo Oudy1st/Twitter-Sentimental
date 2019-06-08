@@ -14,10 +14,10 @@ class TwitterClient(object):
         Class constructor or initialization method. 
         '''
         # keys and tokens from the Twitter Dev Console 
-        consumer_key = 'l7oHZ1s1FoJLLpB3b8dlnhuSg'
-        consumer_secret = 'A8X8MbFrMmAUscEOB18qs0ygwp9h3CDAMiLipJgs7ryvyhEA8q'
-        access_token = '487149209-OXfcn2GvgEDjqpkrspM0oJDkbCNvEvNVeHbHzpfe'
-        access_token_secret = '6sqXM7tZz0nLdL8tB4v9LtySe5u0DlJELxg3zt1NlK2lQ'
+        consumer_key = 'xxx'
+        consumer_secret = 'xxx'
+        access_token = 'xxx'
+        access_token_secret = 'xxx'
 
         # attempt authentication 
         try: 
@@ -112,9 +112,9 @@ def main():
     # creating object of TwitterClient Class 
     api = TwitterClient() 
     # calling function to get tweets 
-    tweets = api.get_tweets(query = '#bbcnews', start = '2019-01-01', count = 1000, allow_retweet = False) 
+    tweets = api.get_tweets(query = '#bbcnews', start = '2019-06-01', count = 1000, allow_retweet = False) 
     print(len(tweets))
-    saveCSV('twitter_scrapping_bbcnews.csv',tweets)
+    saveCSV('twitter_scrapping.csv',tweets)
 
 
 if __name__ == "__main__":
