@@ -5,6 +5,9 @@ import pandas as pd
 from operator import itemgetter
 
 
+input_file = "twitter_scrapping.csv"
+output_file = "twitter_categorized.csv"
+
 #load model
 pickle_in = open("tweet-categorize-multiclass-array.obj","rb")
 cl_list = pickle.load(pickle_in)
@@ -29,10 +32,10 @@ def classify(text):
 
 
 
-df = pd.read_csv('twitter_scrapping.csv', delimiter=',')
+df = pd.read_csv(input_file, delimiter=',')
 tweets = [(x[0],x[1],x[2],x[3],x[4]) for x in df.values]
 # opening a csv file
-csvFile = open('twitter_categorized.csv', 'a')
+csvFile = open(output_file, 'a')
 csvWriter = csv.writer(csvFile)
 csvWriter.writerow(['create at','tweet', 'categorize', 'sentiment', 'retweet', 'favorite'])
 
