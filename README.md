@@ -42,4 +42,3 @@ I use textblob library to train 5 classifiers and use them joinly for multi-clas
   2. Load the dataset and classify it with all classifiers.
   3. Normalize the results and select the highest probability.
 
-
